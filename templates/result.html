@@ -9,11 +9,13 @@
 </head>
 <body class="result-body"> <!--Added class here-->
   <div class="result-container">
-    <div class="result-text" id="resultText"></div>
-    <img id="labubuImage" class="labubu-img" src="" alt="Labubu result" />
-    <br />
-    <a href="index.html" class="back-button">Do it again</a>
+  <div class="result-text" id="resultText">
+    For "{{ song }}", Drake gets a {{ emotion|capitalize }} Labubu
   </div>
+  <img id="labubuImage" class="labubu-img" src="images/{{ image }}" alt="{{ emotion }} Labubu" />
+  <br />
+  <a href="/" class="back-button">Do it again</a>
+</div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
